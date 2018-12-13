@@ -12,11 +12,13 @@ $arv = rand(0, 100); //juhuslik täisarv vahemikus 0-100
 
 if($arv > 0 and $arv < 25){
     //antud arv on paaris ja on roheline
-    echo '<p style="color:green">'.$arv.'</p>';
+    $varv = 'aqua';
 } else if ($arv > 25 and $arv < 50) {
-    echo '<p style="color:red">'.$arv.'</p>';
+    $varv = 'red';
 } else if ($arv > 50 and $arv < 75) {
-    echo '<p style="color:orange">'.$arv.'</p>';
+    $varv = 'green';
 } else if ($arv > 75 and $arv < 100) {
-    echo '<p style="color:black">'.$arv.'</p>';
+    $varv = 'orange';
 }
+
+echo '<p style="color: '.$varv.'">'.$arv.'</p>';
