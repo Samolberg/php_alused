@@ -7,7 +7,7 @@
  * väärtus on väikem kui lõppväärtus
  * }
  **/
-
+header('Refresh: 1');
 echo '<h4>Tsüklid - for</h4>';
 echo '<table>';
 for($rida = 1; $rida <= 5; $rida++){
