@@ -22,3 +22,4 @@ function numbriKordumine($arv, $kontrollNumber)
 }
 numbriKordumine(442158755745, 5);
 numbriKordumine(778692136544, 7);
+
