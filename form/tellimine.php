@@ -8,11 +8,16 @@
 echo '<h1>Tellimine</h1>';
 
 //lisab vormist saadud andmed muutujasse
-$toode1 = $_GET['t1'];
-$toode2 = $_GET['t2'];
-$toode3 = $_GET['t3'];
+$keraRaadius = $_GET['keRaadius'];
+$keraRuumala = 4/3*3.14*pow($keraRaadius,3);
+echo 'Kera ruumala on: '.$keraRuumala.'<br>';
+$koonuseRaadius = $_GET['kRaadius'];
+$koonuseKorgus = $_GET['kKorgus'];
+$koonuseRuumala = 1/3*3.14*pow($koonuseRaadius, 2)*$koonuseKorgus;
+echo 'Koonuse kõrgus on: '.$koonuseRuumala.'<br>';
+$silindriRaadius = $_GET['sRaadius'];
+$silindriKorgus = $_GET['sKorgus'];
+$silindriRuumala = 3.14*pow($silindriRaadius,2)*$silindriKorgus;
+echo 'Koonuse ruumala on: '.number_format($silindriRuumala,2).'<br>';
 
-echo 'Toode 1: ' . $toode1 . 'tk<br>';
-echo 'Toode 2: ' . $toode2 . 'tk<br>';
-echo 'Toode 3: ' . $toode3 . 'tk<br>';
 ?>
