@@ -105,5 +105,16 @@ if (($jarg + 1 - $synd) % 5 == 0) {
     echo 'Juubelini on veel aega';
 }
 echo '<hr>';
+$aeg = date('H');
+if ($aeg >= 8 and $aeg < 13) {
+    echo 'Tere hommikust';
+}
+else if ($aeg >= 13 and $aeg < 17) {
+    echo 'Tere päevast';
+}
+else if ($aeg >= 17) {
+    echo 'Tere õhtust';
+}
+
 ?>
 
