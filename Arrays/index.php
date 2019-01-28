@@ -1,8 +1,8 @@
 
 <?php
-$an_array = array('x', 'a', 'f', 'c');
-sort($an_array);
-foreach ($an_array as $var) {
-    print $var.'<br>';
+$first = array('first'=>5, 'second'=>2, 'third'=>1);
+asort($first);
+foreach ($first as $key => $var) {
+    print $key = $var.'<br>';
 }
 ?>
