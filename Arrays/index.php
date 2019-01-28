@@ -1,7 +1,4 @@
 <?php
-$users[] = 'Bert';
-$users[] = 'Sharon';
-$users[] = 'Betty';
-$users[] = 'Harry';
-print $users[2];
+$character = array('name'=> 'Bob', 'occupation'=> 'superhero', 'age'=> '30', "special power"=> 'x-ray vision');
+print $character['age'];
 ?>
