@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: l.samolberg
- * Date: 22.01.2019
- * Time: 13:35
- */
+
 date_default_timezone_set('Europe/Tallinn');
 echo date('d.m.Y G:i' , time()).'<br>';
 //kuude massiiv
@@ -21,4 +16,10 @@ echo date('d.m.Y G:i' , time()+2000).'<br>';
 echo date('d.m.Y G:i' , time()+2500*150).'<br>';
 echo date('d.m.Y G:i' , time()+59*120*954).'<br>';
 echo strtotime("+12 week 5 days 2 hours 20 seconds").'<br>';
+
+echo '<hr>';
+echo 'ülesanne 8'.'<br>';
+echo date('d.m.Y G:i' , time()).'<br>';
+
+
 ?>
