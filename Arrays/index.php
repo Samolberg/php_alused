@@ -1,9 +1,8 @@
 
 <?php
-$an_array = array('a', 'b', 'c');
-while (count($an_array)) {
-    $val = array_shift($an_array);
-    print $val . '<br>';
-    print 'There are '.count($an_array).' elements in '.$an_array.'<br>';
+$first = array('a', 'b', 'c', 'd', 'e', 'f');
+$second = array_slice($first, 2, 3);
+foreach ($second as $var) {
+    print $var.'<br>';
 }
 ?>
