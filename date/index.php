@@ -48,4 +48,30 @@ function kuu()
 }
 echo kuu();
 
+echo '<hr>';
+
+function kuu2()
+{
+    $paev = date('d');
+    $kuu = date('n');
+    $aasta = date('Y');
+    $paevanimi = date('l');
+    if ($paevanimi == 'Monday') {
+        echo $paev.'.'.$kuu.' '.$aasta.' esmaspäev';
+    } else if ($paevanimi == 'Tuesday') {
+        echo $paev.'.'.$kuu.' '.$aasta.' teisipäev';
+    } else if ($paevanimi == 'Wednesday') {
+        echo $paev.'.'.$kuu.' '.$aasta.' kolmapäev';
+    } else if ($paevanimi == 'Thursday') {
+        echo $paev.'.'.$kuu.' '.$aasta.' neljapäev';
+    } else if ($paevanimi == 'Friday') {
+        echo $paev.'.'.$kuu.' '.$aasta.' reede';
+    } else if ($paevanimi == 'Saturday') {
+        echo $paev.'.'.$kuu.' '.$aasta.' laupäev';
+    } else if ($paevanimi == 'Sunday') {
+        echo $paev.'.'.$kuu.' '.$aasta.' pühapäev';
+    }
+}
+echo kuu2();
+echo '<hr>';
 ?>
