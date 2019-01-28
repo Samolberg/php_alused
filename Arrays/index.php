@@ -1,7 +1,9 @@
 
 <?php
 $users = array('Bert', 'Sharon', 'Betty', 'Harry');
-print $users[count($users)-1];
+foreach ($users as $val) {
+    print $val.'<br>';
+}
 ?>
 
 
