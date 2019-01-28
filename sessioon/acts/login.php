@@ -17,4 +17,11 @@ $ikt = connect_db(DBHOST, DBUSER, DBPASS, DBNAME);
 $sql = 'SELECT * FROM user WHERE username="'.$username.'" AND password="'.md5($password).'"';
 $users = getData($sql, $ikt);
 // väljastame andmed
-echo $users[0]['first_name'].' '.$users[0]['last_name'];
+//echo $users[0]['first_name'].' '.$users[0]['last_name'];
+
+// loome kasutaja sessiioon, kui ta andmebaasis olemas
+if($users !== false){
+    session_start();
+    $_SESSION['user'] = $users[0];
+    header('Location: ../index.php');
+}
