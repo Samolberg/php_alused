@@ -80,5 +80,15 @@ echo '<hr>';
 $jaan = mktime(0, 0, 0, 6, 24, 2019);
 echo 'Jaanipäevani on ' . round(date($jaan - strtotime('now')) / 3600 / 24) . ' päeva.';
 echo '<hr>';
+
+$päev1 = date('Y', mktime(0,0,0,11,6,1980));
+$päev2 = date('Y', mktime(0,0,0,2,20,1993));
+if ($synd1 > $synd2) {
+    echo 'Noorem '.($päev1-$päev2).' aastat';
+}
+else {
+    echo 'Vanem '.($päev2-$päev1).' aastat';
+}
+echo '<hr>';
 ?>
 
