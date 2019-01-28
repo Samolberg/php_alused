@@ -20,6 +20,32 @@ echo strtotime("+12 week 5 days 2 hours 20 seconds").'<br>';
 echo '<hr>';
 echo 'ülesanne 8'.'<br>';
 echo date('d.m.Y G:i' , time()).'<br>';
+$paevad = array(1=>'esmaspäev', 'teisipäev', 'kolmapäev', 'neljapäev', 'reede', 'laupäev', 'pühapäev');
+//kuupäevad massiividesse
+$paev = date('d');
+$kuu = date('n');
+$aasta = date('Y');
 
+
+function kuu()
+{
+    $paevanimi = date('l');
+    if ($paevanimi == 'Monday') {
+        echo 'Esmaspäev';
+    } else if ($paevanimi == 'Tuesday') {
+        echo 'Teisipäev';
+    } else if ($paevanimi == 'Wednesday') {
+        echo 'Kolmapäev';
+    } else if ($paevanimi == 'Thursday') {
+        echo 'Neljapäev';
+    } else if ($paevanimi == 'Friday') {
+        echo 'Reede';
+    } else if ($paevanimi == 'Saturday') {
+        echo 'Laupäev';
+    } else if ($paevanimi == 'Sunday') {
+        echo 'Pühapäev';
+    }
+}
+echo kuu();
 
 ?>
